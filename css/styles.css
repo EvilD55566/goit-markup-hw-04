@@ -129,6 +129,19 @@ img {
   background-color: var(--footer-hero-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    height: 600px;
+
 }
 
 .hero-title {
@@ -257,6 +270,7 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 .team-thumb {
   background: var(--primary-white-color);
@@ -265,6 +279,23 @@ img {
   border-radius: 0px 0px 4px 4px;
   padding-top: var(--primary-margin);
   padding-bottom: var(--primary-margin);
+}
+.team-soc-list{
+  display: flex;
+  justify-content: center;
+}
+.team-soc-item + .team-soc-item{
+  margin-left: 10px;
+}
+ 
+
+.team-soc-link{
+  width: 44px;
+  height: 44px;
+  background-color: tomato;
+  border-radius: 50%;
+  display: block;
+  
 }
 /*-----------------footer--------------------------------------------*/
 
@@ -362,3 +393,4 @@ a.adress-link {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
+
