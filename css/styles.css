@@ -102,6 +102,14 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-title-color);
 }
+.header-icon-mail {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.header-icon-tel {
+  fill: currentColor;
+  margin-right: 10px;
+}
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
@@ -195,9 +203,9 @@ img {
   margin-left: calc(-1 * var(--primary-margin));
   flex-wrap: wrap;
 }
-.features-item::before{
+.features-item::before {
   display: block;
-  content:" " ;
+  content: " ";
   height: 120px;
   background-color: var(--secondary-white-color);
   border-radius: 4px;
@@ -205,14 +213,20 @@ img {
   background-position: center;
   margin-bottom: var(--primary-margin);
 }
-.antenna::before{
+.antenna::before {
   background-image: url(../images/antenna\ 1.svg);
 }
-.clock::before{ background-image: url(../images/clock\ 1.svg);}
+.clock::before {
+  background-image: url(../images/clock\ 1.svg);
+}
 
-.diagram::before{background-image: url(../images/diagram\ 1.svg);}
+.diagram::before {
+  background-image: url(../images/diagram\ 1.svg);
+}
 
-.astronaut::before{background-image: url(../images/astronaut\ 1.svg);}
+.astronaut::before {
+  background-image: url(../images/astronaut\ 1.svg);
+}
 
 .features-item {
   margin-left: var(--primary-margin);
@@ -250,7 +264,7 @@ img {
 
 .work-title,
 .team-title,
-.clients-title{
+.clients-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -324,35 +338,36 @@ img {
   fill: var(--primary-white-color);
 }
 
-
 /*-----------------clients---------------------------*/
-.clients-list{
- display: flex;
- justify-content: center;
+.clients-list {
+  display: flex;
+  justify-content: center;
 }
 
- .clients-item + .clients-item{margin-left: var(--primary-margin);}
+.clients-item + .clients-item {
+  margin-left: var(--primary-margin);
+}
 
-.clients-link{
+.clients-link {
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: #AFB1B8; }
+  fill: #afb1b8;
+}
 
-  .clients-link:hover,
-  .clients-link:focus{
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-  }
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
 
 /*-----------------footer--------------------------------------------*/
 
 .footer {
-  
   background-color: var(--footer-hero-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -386,15 +401,60 @@ a.adress-link {
 .adress-tel-link:focus {
   color: var(--primary-white-color);
 }
-.footer .container{display: flex;}
-.footer-soc-link{
+/* .footerf{
   display: flex;
-  justify-content: center;
-  align-items: center;
+} */
+/* .footer-soc{
+  display: flex;
+} */
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-soc {
+  margin-left: 70px;
+}
+.footer-soc-list {
+  display: flex;
+}
+.footer-soc-item + .footer-soc-item {
+  margin-left: 10px;
+}
+.footer-soc-link {
+  display: inline-block;
   width: 44px;
   height: 44px;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+}
+.instagram {
+  background-image: url(../images/instagramfooter.svg);
+}
+.twitter {
+  background-image: url(../images/twitterfooter.svg);
+}
+.facebook {
+  background-image: url(../images/facebookfooter.svg);
+}
+.linkedin {
+  background-image: url(../images/linkedinfooter.svg);
 }
 /*-------------------Portfolio-----------------------------------------*/
 .btn-list {
@@ -425,6 +485,8 @@ a.adress-link {
 .btn:focus {
   background-color: var(--accent-color);
   color: var(--secondary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .port-list {
   display: flex;
@@ -457,4 +519,9 @@ a.adress-link {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+.port-item:hover,
+.port-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
