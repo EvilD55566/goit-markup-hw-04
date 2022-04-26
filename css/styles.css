@@ -101,6 +101,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
+  display: flex;
+  align-items: center;
 }
 .header-icon-mail {
   fill: currentColor;
@@ -143,6 +145,7 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/bg-image.jpg);
+    background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
@@ -203,7 +206,7 @@ img {
   margin-left: calc(-1 * var(--primary-margin));
   flex-wrap: wrap;
 }
-.features-item::before {
+/* .features-item::before {
   display: block;
   content: " ";
   height: 120px;
@@ -226,8 +229,16 @@ img {
 
 .astronaut::before {
   background-image: url(../images/astronaut\ 1.svg);
+} */
+.features-icon-conteiner{
+  height: 120px;
+  background-color: var(--secondary-white-color);
+  border-radius: 4px;
+  margin-bottom: var(--primary-margin);
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
-
 .features-item {
   margin-left: var(--primary-margin);
   flex-basis: calc(100% / 4 - 30px);
@@ -500,6 +511,9 @@ a.adress-link {
   margin-bottom: var(--primary-margin);
   flex-basis: calc(100% / 3 - 30px);
 }
+.port-link{
+  display: block;
+}
 
 .port-title {
   font-size: 18px;
@@ -520,8 +534,8 @@ a.adress-link {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-.port-item:hover,
-.port-item:focus {
+.port-link:hover,
+.port-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
